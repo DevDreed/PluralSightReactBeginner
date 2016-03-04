@@ -1,13 +1,16 @@
 import React from 'react';
+import Card from './Card';
 
-class Card extends React.Component {
+class App extends React.Component {
     constructor(props) {
         super(props);
-        this.displayName = 'Card';
+        this.displayName = 'App';
     }
     render() {
-        return <div>Asdf</div>;
+        return (<div>
+					<Card login="petehunt" />
+        		</div>);
     }
 }
 
-export default Card;
+export default App;
